@@ -1,0 +1,61 @@
+// Variables de color
+$color-principal: #A80025;
+$color-blanco: #fff;
+$color-negro: #0e0d0d;
+$color-hover: #e10600;
+
+// Estilos generales del header
+header {
+    background-color: $color-principal;
+    padding: 10px 0;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        border: none;
+        background-color: $color-principal;
+
+        .navbar-toggler-icon {
+            background-color: $color-blanco;
+        }
+    }
+
+    .navbar-brand {
+        order: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        img {
+            width: 200px;
+        }
+    }
+
+    .navbar-collapse {
+        display: flex;
+        justify-content: flex-end;
+
+        .navbar-nav {
+            display: flex;
+            gap: 20px;
+
+            .nav-item {
+                .nav-link {
+                    color: $color-blanco;
+                    font-size: 1.1rem;
+                    padding: 10px;
+
+                    &:hover {
+                        color: $color-hover;
+                    }
+                }
+            }
+        }
+    }
+}

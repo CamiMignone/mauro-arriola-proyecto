@@ -1,0 +1,63 @@
+// Variables de color
+$color-fondo-main: #f8f9fa;
+$color-titulo: #e10600;
+$color-texto-principal: #333;
+$color-texto-secundario: #555;
+$color-imagen-fondo: #ffffff;
+
+// Estilos generales del main
+main {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: $color-fondo-main;
+
+    .textos-videos {
+        max-width: 1200px;
+        width: 100%;
+        padding: 30px;
+        background-color: $color-imagen-fondo;
+        border-radius: 15px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+
+        // Títulos y párrafos
+        h1 {
+            font-size: 2.5rem;
+            color: $color-titulo;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: $color-texto-principal;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: $color-texto-secundario;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    }
+
+    .imagenes-videos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        justify-items: center;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}

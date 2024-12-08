@@ -1,0 +1,117 @@
+// Variables de color
+$color-fondo-main: #fff;
+$color-texto-principal: #333;
+$color-titulo: #e10600;
+$color-secundario: #555;
+$color-borde: #ccc;
+
+// Estilos generales del main
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px;
+    background-color: $color-fondo-main;
+
+    .main-noticias {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .noticias-principal-1 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .ultimas-noticias {
+                flex: 1;
+                min-width: 250px;
+                background-color: $color-fondo-main;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+                h2 {
+                    font-size: 1.5rem;
+                    color: $color-titulo;
+                    margin-bottom: 10px;
+                }
+
+                h3 {
+                    font-size: 1.2rem;
+                    color: $color-texto-principal;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    font-size: 1rem;
+                    color: $color-secundario;
+                }
+            }
+
+            .ferrari-noticias {
+                flex: 1;
+                min-width: 250px;
+                background-color: $color-fondo-main;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+                h3 {
+                    font-size: 1.2rem;
+                    color: $color-texto-principal;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    font-size: 1rem;
+                    color: $color-secundario;
+                }
+            }
+
+            .equipos-principales {
+                flex: 1;
+                min-width: 250px;
+                background-color: $color-fondo-main;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+                h2 {
+                    font-size: 1.5rem;
+                    color: $color-titulo;
+                    margin-bottom: 15px;
+                }
+
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+
+                    li {
+                        font-size: 1rem;
+                        color: $color-texto-principal;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .monoplaza {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .imagen-pequeña {
+            max-width: 450px;
+            border-radius: 10px;
+        }
+    }
+}

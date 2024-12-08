@@ -1,0 +1,213 @@
+// Variables para tamaño de pantallas
+$small-screen: 576px;
+$medium-screen: 768px;
+$large-screen: 992px;
+$extra-large-screen: 1200px;
+
+// Medias Queries para pantallas pequeñas
+@media (max-width: $small-screen) {
+
+    /* Para el primer HTML */
+    .resultados-contenidos {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .resultados-contenidos .texto {
+        padding: 20px;
+    }
+
+    .resultados-contenidos .imagenes {
+        margin-top: 20px;
+    }
+
+    /* Para el segundo HTML */
+    .store {
+        padding: 20px;
+    }
+
+    .store h1 {
+        font-size: 1.8rem;
+    }
+
+    .store p {
+        font-size: 1rem;
+    }
+
+    .imagenes-videos {
+        grid-template-columns: 1fr;
+    }
+
+    /* Para el tercer HTML */
+    .textos-videos h1 {
+        font-size: 2rem;
+    }
+
+    .textos-videos h2 {
+        font-size: 1.6rem;
+    }
+
+    .textos-videos p {
+        font-size: 1rem;
+    }
+
+    .imagenes-videos {
+        grid-template-columns: 1fr;
+    }
+}
+
+// Medias Queries para pantallas medianas
+@media (max-width: $medium-screen) {
+
+    /* Para el primer HTML */
+    .resultados-contenidos {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .resultados-contenidos .texto {
+        padding: 20px;
+    }
+
+    .resultados-contenidos .imagenes {
+        margin-top: 30px;
+    }
+
+    /* Para el segundo HTML */
+    .store {
+        padding: 25px;
+    }
+
+    .store h1 {
+        font-size: 2rem;
+    }
+
+    .store p {
+        font-size: 1.1rem;
+    }
+
+    .imagenes-videos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Para el tercer HTML */
+    .textos-videos h1 {
+        font-size: 2.2rem;
+    }
+
+    .textos-videos h2 {
+        font-size: 1.8rem;
+    }
+
+    .textos-videos p {
+        font-size: 1.1rem;
+    }
+
+    .imagenes-videos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+// Medias Queries para pantallas grandes
+@media (max-width: $large-screen) {
+
+    /* Para el primer HTML */
+    .resultados-contenidos {
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .resultados-contenidos .texto {
+        padding: 30px;
+    }
+
+    .resultados-contenidos .imagenes {
+        margin-top: 40px;
+    }
+
+    /* Para el segundo HTML */
+    .store {
+        padding: 30px;
+    }
+
+    .store h1 {
+        font-size: 2.3rem;
+    }
+
+    .store p {
+        font-size: 1.2rem;
+    }
+
+    .imagenes-videos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Para el tercer HTML */
+    .textos-videos h1 {
+        font-size: 2.3rem;
+    }
+
+    .textos-videos h2 {
+        font-size: 1.9rem;
+    }
+
+    .textos-videos p {
+        font-size: 1.2rem;
+    }
+
+    .imagenes-videos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+// Medias Queries para pantallas extra grandes
+@media (max-width: $extra-large-screen) {
+
+    /* Para el primer HTML */
+    .resultados-contenidos {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    .resultados-contenidos .texto {
+        padding: 40px;
+    }
+
+    .resultados-contenidos .imagenes {
+        margin-top: 50px;
+    }
+
+    /* Para el segundo HTML */
+    .store {
+        padding: 35px;
+    }
+
+    .store h1 {
+        font-size: 2.5rem;
+    }
+
+    .store p {
+        font-size: 1.3rem;
+    }
+
+    .imagenes-videos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Para el tercer HTML */
+    .textos-videos h1 {
+        font-size: 2.5rem;
+    }
+
+    .textos-videos h2 {
+        font-size: 2rem;
+    }
+
+    .textos-videos p {
+        font-size: 1.3rem;
+    }
+
+    .imagenes-videos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

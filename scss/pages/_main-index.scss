@@ -1,63 +1,172 @@
-// Reset global
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+// Variables de color
+$color-fondo-main: #fff;
+$color-texto-principal: #333;
+$color-secundario: #555;
+$color-titulo: #e10600;
+$color-fondo-secundario: #f4f4f4;
 
-// Estilo del body (mantener igual)
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0px;
-}
 
-// Estilos de main
+// Estilos generales del main
 main {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px;
     flex-wrap: wrap;
+    background-color: $color-fondo-secundario;
 
     .contenido-principal {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
-        background-color: #fff;
+        background-color: $color-fondo-main;
         padding: 20px;
         width: 100%;
+    }
 
-        .textos {
-            flex: 1;
-            min-width: 300px;
+    .textos {
+        flex: 1;
+        min-width: 300px;
 
-            h1 {
-                font-size: 2rem;
-                color: rgb(10, 10, 10);
-                margin-bottom: 15px;
-            }
+        h1 {
+            font-size: 2rem;
+            color: $color-texto-principal;
+            margin-bottom: 15px;
+        }
 
-            .texto {
-                font-size: 1rem;
-                margin-bottom: 15px;
-                color: #555;
-            }
+        .texto {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            color: $color-secundario;
+        }
+    }
+
+    .img {
+        min-width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+
+    .store {
+        background-color: $color-fondo-main;
+        padding: 20px;
+        border-radius: 10px;
+
+        h1 {
+            font-size: 2rem;
+            color: $color-titulo;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            color: $color-secundario;
         }
 
         .img {
-            min-width: 300px;
             display: flex;
             justify-content: center;
             align-items: center;
 
             img {
-                max-width: 100%;
-                height: auto;
+                width: 100%;
                 border-radius: 10px;
-                object-fit: cover;
             }
+        }
+    }
+
+    .resultados-contenidos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        background-color: $color-fondo-main;
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .texto {
+        min-width: 300px;
+
+        h1 {
+            font-size: 2rem;
+            color: $color-titulo;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: $color-texto-principal;
+        }
+
+        p {
+            font-size: 1rem;
+            color: $color-secundario;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+    }
+
+    .imagenes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+
+    .textos-videos {
+        background-color: $color-fondo-main;
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 800px;
+        text-align: center;
+
+        h1 {
+            font-size: 2rem;
+            color: $color-titulo;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: $color-texto-principal;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: $color-secundario;
+            line-height: 1.8;
+            text-align: justify;
+            margin-top: 10px;
+        }
+    }
+
+    .imagenes-videos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+
+        img {
+            width: 350px;
+            height: auto;
+            border-radius: 10px;
         }
     }
 }
