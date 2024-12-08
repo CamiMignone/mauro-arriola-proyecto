@@ -1,0 +1,12 @@
+.navegacion {
+    background-color: $color-secondary;
+    color: $color-footer-text;
+    padding: 10px;
+    text-align: center;
+
+    a {
+        color: $color-text;
+        padding: 10px;
+        text-decoration: none;
+    }
+}
