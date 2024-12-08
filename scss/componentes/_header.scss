@@ -13,6 +13,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        --bs-navbar-toggler-focus-width:none;
     }
 
     .navbar-toggler {
@@ -20,7 +21,7 @@ header {
         background-color: $color-principal;
 
         .navbar-toggler-icon {
-            background-color: $color-blanco;
+            background-color:none;
         }
     }
 
