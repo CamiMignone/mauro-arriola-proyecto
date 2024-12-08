@@ -1,8 +1,12 @@
-@import 'utilidades/variables';
-@import 'utilidades/mixins';
-@import 'utilidades/reset';
-@import 'utilidades/base';
-@import 'utilidades/layout';
-@import 'utilidades/footer';
-@import 'utilidades/components';
+@import "./utilidades/globals";
+@import "./componentes/header";
 
+@import "./pages/main-index";
+@import "./pages/main-noticias";
+@import "./pages//main-Resultados";
+@import "./pages/main-Store";
+@import "./pages/main-videos";
+
+
+@import "./componentes/footer";
+@import "./utilidades/medidas-queries";
