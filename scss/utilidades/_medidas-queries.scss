@@ -4,6 +4,18 @@ $medium-screen: 768px;
 $large-screen: 992px;
 $extra-large-screen: 1200px;
 
+
+
+@media (max-width: 576px) {
+    .drivers-section{
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
 // Medias Queries para pantallas pequeñas
 @media (max-width: $small-screen) {
 
@@ -54,6 +66,11 @@ $extra-large-screen: 1200px;
     .imagenes-videos {
         grid-template-columns: 1fr;
     }
+
+
+
+
+
 }
 
 // Medias Queries para pantallas medianas
@@ -105,6 +122,15 @@ $extra-large-screen: 1200px;
 
     .imagenes-videos {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .card-group {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        .card{
+            width: 100%;
+            margin: 0px;
+        }
     }
 }
 

@@ -4,6 +4,17 @@ $color-blanco: #fff;
 $color-negro: #0e0d0d;
 $color-hover: #e10600;
 
+// Mixin para los estilos de los enlaces
+@mixin link-styles($color, $hover-color) {
+    color: $color;
+    font-size: 1.1rem;
+    padding: 10px;
+
+    &:hover {
+        color: $hover-color;
+    }
+}
+
 // Estilos generales del header
 header {
     background-color: $color-principal;
@@ -13,7 +24,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        --bs-navbar-toggler-focus-width:none;
+        --bs-navbar-toggler-focus-width: none;
     }
 
     .navbar-toggler {
@@ -21,7 +32,7 @@ header {
         background-color: $color-principal;
 
         .navbar-toggler-icon {
-            background-color:none;
+            background-color: none;
         }
     }
 
@@ -48,15 +59,10 @@ header {
 
             .nav-item {
                 .nav-link {
-                    color: $color-blanco;
-                    font-size: 1.1rem;
-                    padding: 10px;
-
-                    &:hover {
-                        color: $color-hover;
-                    }
+                    @include link-styles($color-blanco, $color-hover); // Uso del mixin
                 }
             }
         }
     }
 }
+

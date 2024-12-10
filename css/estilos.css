@@ -1,12 +1,11 @@
 /* reset */
 
-
-/* * {
+/* 
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
+} 
 .caja {
     background-color: tomato;
     width: 200px;
@@ -17,15 +16,15 @@
 }
 
 /* estilo body */
-
-/* body {
+/* 
+ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     margin: 0px;
-}
+} */ 
 
-estilos de header */
+/* estilos de header */ 
 /* header {
     background-color: #A80025;
 }
